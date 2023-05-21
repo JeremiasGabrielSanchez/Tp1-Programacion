@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from './component/NavBar';
+import Container from './component/Container';
+import Footer from './component/Footer';
+import LogIn from './component/LogIn'
+import SingUp from './component/SingUp';
+import Tela from './component/Tela';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ChakraProvider>
+        <NavBar titulo={'Lista del Grupo'}/>
+        <Routes>
+          <Route path='/' element={<Container/>}/>
+          <Route path='/login' element={<LogIn/>}/>
+          <Route path='/singup' element={<SingUp/>}/>
+          <Route path='/tela' element={<Tela/>}/>
+        </Routes>
+        <Footer/>
+      </ChakraProvider>
+    </BrowserRouter>
   );
 }
 
