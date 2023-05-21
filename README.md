@@ -10,7 +10,7 @@ Este trabajo Practico se presentará en clase, se conformará un grupo de como m
 2. Crear un Grid-layout en el proyecto de react, que contenga Cabecera, Menú, Contenido, Barra Lateral y Pie de Página.
 3. Crear un componente con una lista con renderizado condicional, la misma debe contener varios alumnos y tildar a los alumnos que son miembro del grupo, la cual se encontrara en la sección de Contenido.
 4. En el header colocar un componente con el título de la página el cual será modificado con una prop desde donde se llama al componente.
-5. Colocar otros componentes en el Menú y Pie de Página, los mismos pueden ser creados con los elementos de jsx (<h1>, <p>, <button>, etc.) – Puede utilizar react-Bootstrap (opcional).
+5. Colocar otros componentes en el Menú y Pie de Página, los mismos pueden ser creados con los elementos de jsx (< h1 >, < p >, < button >, etc.) – Puede utilizar react-Bootstrap (opcional).
 6. En la Barra Lateral incluir una imagen que contenga una foto de todos los miembros del grupo, junto con un título y descripción. (para esta parte puede utilizar react-Bootstrap, opcional, más específicamente el componente Card).
 
 ## Tecnologias utilizadas
