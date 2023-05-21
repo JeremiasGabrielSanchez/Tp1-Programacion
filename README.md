@@ -1,6 +1,6 @@
 # Trabajo Practico de Programación 3
 
-### Introducción a React
+## Introducción a React
 
 Este trabajo Practico se presentará en clase, se conformará un grupo de como máximo 4 alumnos, y en la fecha del martes 30 de mayo cada grupo expondrá su trabajo al profesor.
 
