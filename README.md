@@ -39,4 +39,4 @@ npm i @chakra-ui/icons
 
 ## Page Deployment
 
-* [Pagina Desplegada](tp1-programacion-kkjb21usg-jeremiasgabrielsanchez.vercel.app)
+* Pagina Desplegada tp1-programacion-kkjb21usg-jeremiasgabrielsanchez.vercel.app
