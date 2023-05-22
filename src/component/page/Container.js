@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Grid, GridItem, Text, Flex, List, ListItem, ListIcon } from '@chakra-ui/react'
 import { CheckCircleIcon, NotAllowedIcon } from '@chakra-ui/icons'
-import Integrante from './Integrante'
+import Integrante from '../Integrante'
 
 function Container() {
 

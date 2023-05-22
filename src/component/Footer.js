@@ -6,7 +6,14 @@ import { FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
 
-      <Grid templateColumns='repeat(3, 1fr)' mt='1rem' as='b'>
+      <Grid templateColumns='repeat(3, 1fr)' pt='1rem' pr='.3rem' as='b' 
+      bg='blackAlpha.800' border='2px' borderStyle='outset' borderColor='black'
+      bgGradient={[
+        'linear(to-tr, teal.300, yellow.400)',
+        'linear(to-t, blackAlpha.200, teal.500)',
+        'linear(to-b, blackAlpha.100, blue.200)',
+      ]}
+      color='blue.600' textShadow='1px 1px 1px black'>
 
         <GridItem colSpan={2} display='flex' alignItems='center' justifyContent='center'>
           <Text fontFamily='sans-serif' fontSize='1.7rem' as='u'>Trabajo practico N°1 - Lista de alumnos</Text>

@@ -10,7 +10,7 @@ function NavBar({titulo}) {
       bgColor='blackAlpha.800' border='2px' borderColor='yellow.500'
       boxShadow='2px 2px 5px #000000d7'
     >
-      <Flex bgColor='blue.300' w='100%' borderBottom='2px' borderColor='yellow.500'>
+      <Flex bgGradient='linear(to-r, blackAlpha.300, blue.400, blackAlpha.300)' w='100%' borderBottom='2px' borderColor='yellow.500'>
         <Text m='.5rem auto .5rem auto' fontSize='2rem'> 
           {titulo}
         </Text>
