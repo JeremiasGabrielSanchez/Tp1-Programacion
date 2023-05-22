@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import theme from "./assets/theme";
 import NavBar from './component/NavBar';
 import Container from './component/page/Container';
 import Footer from './component/Footer';
@@ -10,7 +11,7 @@ import Tela from './component/Tela';
 function App() {
   return (
     <BrowserRouter>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <NavBar titulo={'Lista del Grupo'}/>
         <Routes>
           <Route path='/' element={<Container/>}/>
