@@ -43,7 +43,7 @@ function Container() {
 
                 <ListItem onClick={()=>setIntegrante(2)} _hover={{fontSize:'1.1rem', color:'blackAlpha.700', cursor: 'pointer'}}>
                   <ListIcon as={CheckCircleIcon} color='green'/>
-                  Amenda Agustín
+                  Amenta Agustín
                 </ListItem>
 
                 <ListItem onClick={()=>setIntegrante(3)} _hover={{fontSize:'1.1rem', color:'blackAlpha.700', cursor: 'pointer'}}> 
