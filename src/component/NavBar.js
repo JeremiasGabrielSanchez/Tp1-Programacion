@@ -13,7 +13,7 @@ function NavBar({titulo}) {
         display={['none', 'none','flex', 'flex']}
       >
         <Flex bgGradient='linear(to-r, blackAlpha.300, blue.400, blackAlpha.300)' w='100%' borderBottom='2px' borderColor='yellow.500'>
-          <Text m='.5rem auto .5rem auto' fontSize='2rem'> 
+          <Text m='.5rem auto .5rem auto' fontSize='2rem' fontWeight='extrabold'> 
             {titulo}
           </Text>
         </Flex>
@@ -59,7 +59,7 @@ function NavBar({titulo}) {
         display={['flex', 'flex', 'none', 'none']}
       >
         <Flex bgGradient='linear(to-r, blackAlpha.300, blue.400, blackAlpha.300)' w='100%' borderBottom='2px' borderColor='yellow.500'>
-          <Text m='.5rem auto .5rem auto' fontSize='1.5rem'> 
+          <Text m='.5rem auto .5rem auto' fontSize='1.5rem' fontWeight='extrabold'> 
             {titulo}
           </Text>
         </Flex>

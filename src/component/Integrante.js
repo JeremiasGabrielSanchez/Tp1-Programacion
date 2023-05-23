@@ -14,7 +14,12 @@ function Integrante({integrante}) {
   return (
     <Flex>
 
-      <Flex flexDir='column' fontFamily='sans-serif' alignItems='center' justifyContent='center' display={['none', 'none','flex', 'flex']}>
+      <Flex flexDir='column' fontFamily='sans-serif' alignItems='center' justifyContent='center' display={['none', 'none','flex', 'flex']}
+      bgGradient={[
+        'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+        'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+        'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+      ]}>
         <Text as='b' fontSize='1.7rem' mt='1rem'>Barra Lateral</Text>
         <VStack border='2px' borderStyle='dashed' m='10px 10px 20px '>
           <HStack>
@@ -30,12 +35,14 @@ function Integrante({integrante}) {
       {/* -------------------------------------------------- */}
 
       <Flex flexDir='column' fontFamily='sans-serif' alignItems='center' justifyContent='center' display={['flex', 'flex', 'none', 'none']}
-      fontSize='.7rem'>
-        <Text as='b' fontSize='1.2rem' mt='1rem'>Barra Lateral</Text>
+      fontSize='1rem'>
+        <Text as='b' fontSize='1.5rem' mt='1rem'>Barra Lateral</Text>
         <VStack border='2px' borderStyle='dashed' m='10px 10px 20px ' textAlign='center'>
-          
-            <Text fontSize='1rem' as='b' pt='9px'>Apodo:</Text>
-            <Text> {!miembro ? '-' : miembro.apodo} </Text>
+          <HStack >
+
+            <Text fontSize='1.2rem' as='b' pt='9px'>Apodo:</Text>
+            <Text pt='9px'> {!miembro ? '-' : miembro.apodo} </Text>
+          </HStack>
           
           <Image src={!miembro ? fotoVacia : miembro.foto} w='60%' border='2px' borderColor='orange' borderStyle='outset'/>
           <Text fontSize='1rem' as='b'>Descripción</Text>

@@ -4,11 +4,21 @@ import {NavLink} from "react-router-dom";
 
 function SingUp() {
   return (
-    <Flex>
+    <Flex
+    bgGradient={[
+      'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+      'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+      'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+    ]}>
       <Flex flexDir='column' alignItems='center' m='3rem auto' bg='blue.100'
         border='3px' borderColor='blue.500' borderStyle='outset' borderRadius='10px' w='50%'
         fontFamily='sans-serif' fontSize='1.2rem' as='b'
-        display={['none', 'none','flex', 'flex']}>
+        display={['none', 'none','flex', 'flex']}
+        bgGradient={[
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+        ]}>
           <Text m='1rem' fontSize='2rem'> Sing Up </Text>
 
           <Flex flexDir='column' w='80%'>
@@ -66,7 +76,12 @@ function SingUp() {
       <Flex flexDir='column' alignItems='center' m='3rem auto' bg='blue.100'
         border='3px' borderColor='blue.500' borderStyle='outset' borderRadius='10px' w='80%'
         fontFamily='sans-serif' fontSize='1.2rem' as='b'
-        display={['flex', 'flex','none', 'none']}>
+        display={['flex', 'flex','none', 'none']}
+        bgGradient={[
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+        ]}>
           <Text m='1rem' fontSize='2rem'> Sing Up </Text>
 
           <Flex flexDir='column' w='80%'>

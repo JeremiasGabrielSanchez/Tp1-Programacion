@@ -16,8 +16,13 @@ function Container() {
           boxShadow='2px 2px 5px #000000d7'
         >
           <GridItem 
-          colSpan={2} bg='blackAlpha.300' display='flex'
+          colSpan={2} display='flex'
           borderRight='2px' borderColor='yellow.500'
+          bgGradient={[
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          ]}
           >
 
             <Flex 
@@ -73,29 +78,23 @@ function Container() {
 
 {/* ------------------------------------------------------------------------------------- */}
 
-      <Flex display={['flex', 'flex','none', 'none']}>
+      <Flex display={['flex', 'flex','none', 'none']} flexDir='column' justifyContent='center'
+      bgGradient={[
+        'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+        'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+        'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+      ]}>
         
-        <Grid
-          templateColumns='repeat(5, 1fr)'
-          borderBottom='2px' borderColor='yellow.500'
-          boxShadow='2px 2px 5px #000000d7'
-        >
-          <GridItem 
-          colSpan={3} bg='blackAlpha.300' display='flex'
-          borderRight='2px' borderColor='yellow.500'
-          >
-
             <Flex 
-            flexDir='column' alignItems='center' justifyContent='center'
-            w='70%' m='auto' p='.5rem'
+            flexDir='column' alignItems='center'
+            w='60%' m='1.5rem auto' p='2rem'
             fontFamily='sans-serif' as='b' fontSize='80%'
             border='2px' borderStyle='dashed'
-
             >
 
-              <Text fontSize='1.2rem' as='u' mb='.5rem'> Integrantes </Text>
+              <Text fontSize='1.2rem' as='u' mb='1rem'> Integrantes </Text>
 
-              <List spacing={3}>
+              <List spacing={4}>
                 <ListItem onClick={()=>setIntegrante(1)} _hover={{fontSize:'95%', color:'blackAlpha.700', cursor: 'pointer'}}>
                   <ListIcon as={CheckCircleIcon} color='green'/>
                   Abraham Jesús
@@ -128,12 +127,17 @@ function Container() {
               </List>
 
             </Flex>
-          </GridItem>
 
-          <GridItem bg='blackAlpha.500' colSpan={2}>
-            <Integrante integrante={integrante}/>
-          </GridItem>
-        </Grid>
+          <Flex w='100%' borderTop='2px' bg='blue.200' justifyContent='center' borderColor='yellow.500'
+          bgGradient={[
+            'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+            'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+            'linear(to-t, blackAlpha.500, whiteAlpha.500)',
+          ]}>
+            <Flex w='60%'>
+              <Integrante integrante={integrante}/>
+            </Flex>
+          </Flex>
       </Flex>
     </Flex>
   )

@@ -5,9 +5,9 @@ import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <Flex>
+    <Flex bg='blackAlpha.800' w='100%'>
       <Flex display={['none', 'none','flex', 'flex']}>
-      <Grid templateColumns='repeat(3, 1fr)' pt='1rem' pr='.3rem' as='b' 
+      <Grid templateColumns='repeat(3, 1fr)' pt='1rem' pr='.3rem' as='b'
       bg='blackAlpha.800' border='2px' borderStyle='outset' borderColor='black'
       bgGradient={[
         'linear(to-tr, teal.300, yellow.400)',
@@ -17,10 +17,10 @@ function Footer() {
       color='blue.600' textShadow='1px 1px 1px black'>
 
         <GridItem colSpan={2} display='flex' alignItems='center' justifyContent='center'>
-          <Text fontFamily='sans-serif' fontSize='1.7rem' as='u'>Trabajo practico N°1 - Lista de alumnos</Text>
+          <Text fontFamily='sans-serif' fontSize='1.7rem' as='u' fontWeight='extrabold'>Trabajo practico N°1 - Lista de alumnos</Text>
         </GridItem>
 
-        <GridItem>
+        <GridItem colSpan={1}>
           <Flex flexDir='column'>
 
             <HStack gap={10} border='2px' borderStyle='dashed' p='10px'>
@@ -51,22 +51,18 @@ function Footer() {
 
       {/* -------------------------------------------- */}
 
-      <Flex display={['flex', 'flex','none', 'none']}>
-        <Grid templateColumns='repeat(5, 1fr)' pt='1rem'  as='b' 
-        bg='blackAlpha.800' border='2px' borderStyle='outset' borderColor='black'
-        bgGradient={[
-          'linear(to-tr, blackAlpha.200, blue.500)',
-          'linear(to-tr, blackAlpha.200, blue.500)',
-          'linear(to-tr, blackAlpha.200, blue.500)',
-        ]}
-        color='blue.600' textShadow='1px 1px 1px black'>
+      
+        <Flex display={['flex', 'flex','none', 'none']} flexDir='column' justifyContent='center' alignItems='center' p='1rem 0 2rem'
+        bgGradient='linear(to-r, blackAlpha.300, blue.400, blackAlpha.300)' w='100%'
+        border='2px' borderColor='yellow.500' borderStyle='outset' as='b'
+        >
 
-          <GridItem colSpan={3} display='flex' alignItems='center' justifyContent='center' >
-            <Text fontFamily='sans-serif' fontSize='1.2rem' as='u'>Trabajo practico N°1</Text>
-          </GridItem>
+          
+            <Text fontFamily='sans-serif' fontSize='1.2rem' as='u' fontWeight='extrabold'>Trabajo practico N°1</Text>
+          
 
-          <GridItem colSpan={2}>
-            <Flex flexDir='column'>
+          
+            <Flex flexDir='column' mt='1rem'>
 
               <HStack gap={1} border='2px' borderStyle='dashed' p='10px' m='0 .3rem 0 .3rem'>
                 <Link href='https://www.instagram.com/gsuabransk/'>
@@ -89,9 +85,10 @@ function Footer() {
               </HStack>
 
             </Flex>
-          </GridItem>
+          
 
-        </Grid>
+        
+        
       </Flex>
     </Flex>
   )
