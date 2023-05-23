@@ -9,7 +9,7 @@ function SingUp() {
         border='3px' borderColor='blue.500' borderStyle='outset' borderRadius='10px' w='50%'
         fontFamily='sans-serif' fontSize='1.2rem' as='b'
         display={['none', 'none','flex', 'flex']}>
-          <Text m='1rem' fontSize='2rem'> Login In </Text>
+          <Text m='1rem' fontSize='2rem'> Sing Up </Text>
 
           <Flex flexDir='column' w='80%'>
             <Text fontSize='1rem'>
@@ -67,7 +67,7 @@ function SingUp() {
         border='3px' borderColor='blue.500' borderStyle='outset' borderRadius='10px' w='80%'
         fontFamily='sans-serif' fontSize='1.2rem' as='b'
         display={['flex', 'flex','none', 'none']}>
-          <Text m='1rem' fontSize='2rem'> Login In </Text>
+          <Text m='1rem' fontSize='2rem'> Sing Up </Text>
 
           <Flex flexDir='column' w='80%'>
             <Text fontSize='1rem'>
